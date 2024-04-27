@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  cornrow:
+    build: .
+    container_name: cornrow
+    environment:
+      CORNROW_NAME: bluetooth speaker
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/rfkill
+      - /dev/snd
+    network_mode: host
+    restart: unless-stopped
+    

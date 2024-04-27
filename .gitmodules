@@ -1,0 +1,3 @@
+[submodule "cornrow"]
+	path = cornrow
+	url = https://github.com/mincequi/cornrow
