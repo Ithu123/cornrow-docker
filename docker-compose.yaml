@@ -11,6 +11,8 @@ services:
     devices:
       - /dev/rfkill
       - /dev/snd
+    volumes:
+      - ./data/cornrowd.conf:/etc/cornrowd.conf
     network_mode: host
     restart: unless-stopped
     
